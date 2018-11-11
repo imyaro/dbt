@@ -1,4 +1,4 @@
-name: Drupal Base theme
+name: [DBT] Drupal Base theme
 type: theme
 description: Drupal Base theme makes a theme development easier.
 core: 8.x
