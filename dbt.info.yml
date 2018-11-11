@@ -1,8 +1,7 @@
-name: White Horse Tour
+name: Drupal Base theme
 type: theme
-description: White Horse Tour Front Theme
+description: Drupal Base theme makes a theme development easier.
 core: 8.x
-screenshot: screenshot.png
 
 # Using "Classy" as the base theme to avoid unnecessary dependencies
 base theme: classy
