@@ -1,0 +1,16 @@
+<?php
+
+use Drupal\dbt\Theme;
+
+/**
+ * @file
+ * File contains preprocess and process functions for the Drupal Base Theme.
+ */
+
+function dbt_preprocess(array &$variables) {
+  Theme::preprocess($variables);
+}
+
+function dbt_preprocess_field(array $variables) {
+  Theme::preprocess($variables);
+}

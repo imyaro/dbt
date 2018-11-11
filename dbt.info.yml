@@ -1,0 +1,8 @@
+name: White Horse Tour
+type: theme
+description: White Horse Tour Front Theme
+core: 8.x
+screenshot: screenshot.png
+
+# Using "Classy" as the base theme to avoid unnecessary dependencies
+base theme: classy
