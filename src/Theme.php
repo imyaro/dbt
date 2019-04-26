@@ -26,12 +26,19 @@ class Theme {
    */
   protected $preprocessDiscover;
 
+  /**
+   * Process given variables using the theme engine.
+   *
+   * @param array $variables
+   *   Variables array
+   */
   public static function preprocess(array &$variables) {
+    // @todo allow to override Theme object.
     if (static::$themeInstance === NULL) {
       static::$themeInstance = new static();
     }
 
-    return static::$themeInstance->execute('preprocess', $variables);
+    static::$themeInstance->execute('preprocess', $variables);
   }
 
   /**

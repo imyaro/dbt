@@ -1,0 +1,10 @@
+{
+  "name": "drupal/dbt",
+  "license": "GPL-2.0",
+  "description": "Drupal Base Theme",
+  "type": "drupal-theme",
+  "homepage": "https://github.com/zvse/dbt",
+  "support": {
+    "source": "https://github.com/zvse/dbt"
+  }
+}

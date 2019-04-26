@@ -5,6 +5,11 @@ namespace Drupal\dbt\Preprocess;
 use Drupal\Core\Plugin\DefaultPluginManager;
 use Drupal\dbt\Annotation\Preprocess;
 
+/**
+ * Plugin manager for the plugins with type Preprocess
+ *
+ * @see \Drupal\dbt\Annotation\Preprocess.
+ */
 class PreprocessDiscover extends DefaultPluginManager {
 
   /**
