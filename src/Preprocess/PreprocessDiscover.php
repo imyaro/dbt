@@ -39,9 +39,12 @@ class PreprocessDiscover extends DefaultPluginManager {
    * @return \ArrayObject
    */
   protected function getNamespacesObject() {
+    /** @var \Drupal\Core\Theme\ActiveTheme $activeTheme */
+    $activeTheme = \Drupal::getContainer()->get('theme.manager')->getActiveTheme();
+
     return new \ArrayObject([
-      // @todo make it usable for sub-themes.
-      'Drupal\\dbt' => $this->getRoot()
+      // @todo make it usable for another themes.
+      "Drupal\\{$activeTheme->getName()}" => $activeTheme->getPath() . '/src',
     ]);
   }
 
